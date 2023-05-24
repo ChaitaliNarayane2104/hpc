@@ -74,3 +74,22 @@ int main()
 
     return 0;
 }
+/*
+The code you provided is a C++ program that performs matrix multiplication using OpenMP for parallel execution. It takes the dimensions of two matrices as input, generates random values for the matrices, performs matrix multiplication, and prints the resulting matrix.
+
+Here's how the code works:
+
+It prompts the user to enter the number of rows in the first matrix (row1).
+It prompts the user to enter the number of columns in the first matrix (col1).
+It sets the number of rows in the second matrix (row2) equal to col1, which is necessary for matrix multiplication.
+It prompts the user to enter the number of columns in the second matrix (col2).
+It generates random values for the first matrix (mat1) and prints its contents.
+It generates random values for the second matrix (mat2) and prints its contents.
+It initializes the result matrix (mat3) with zeros.
+It uses OpenMP to parallelize the matrix multiplication.
+For each element in the result matrix, it initializes an array arr with zeros.
+It multiplies the corresponding rows and columns of the first and second matrices and stores the results in arr.
+It calculates the sum of the elements in arr using OpenMP's reduction clause.
+It assigns the sum to the corresponding element in the result matrix.
+Finally, it prints the resulting matrix (mat3).
+*/
